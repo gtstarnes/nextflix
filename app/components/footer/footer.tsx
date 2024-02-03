@@ -3,9 +3,9 @@ import { footerLinks } from "./footerLinks";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center gap-4 text-sm text-slate-600">
         <p>Questions? Call 1-234-567-8910</p>
-        <ul>
+        <ul className="grid grid-cols-2 gap-4 underline">
             {footerLinks.map((link) => {
                 return (
                 <li key={link.text}>
