@@ -6,7 +6,7 @@ const EmailSignUpForm = () => {
         <p>Ready to watch? Enter your email to create or restart your membership</p>
         <form className="flex gap-2 mt-2">
             <input type="email" id="email" name="email" placeholder='Email address'required
-                    className="h-16 w-[400px] rounded p-4 border-2 border-gray-400
+                    className="h-16 w-[330px] rounded p-4 border-2 border-gray-400
                     focus:outline-none focus:border-gray-300" 
                     />
                 <button type="submit" 
