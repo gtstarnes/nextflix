@@ -20,6 +20,10 @@ export default function Home() {
           <h1>Create profiles for kids</h1>
           <p>Send kids on adventures with their favorite characters in a space made just for them -- free with your membership</p>
         </HomeCard>
+        <HomeCard>
+          <h1>Download your shows to watch offline</h1>
+          <p>Watch on a plane, train, or submarine...</p>
+        </HomeCard>
         <EmailSignUpForm />
       </>
   )
