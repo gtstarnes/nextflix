@@ -13,8 +13,8 @@ export default function Home() {
           <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu ray players, and more.</p>
         </HomeCard>
         <HomeCard>
-          <h1></h1>
-          <p></p>
+          <h1>Watch everywhere</h1>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
         </HomeCard>
         <EmailSignUpForm />
       </>
