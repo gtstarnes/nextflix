@@ -16,6 +16,10 @@ export default function Home() {
           <h1>Watch everywhere</h1>
           <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
         </HomeCard>
+        <HomeCard>
+          <h1>Create profiles for kids</h1>
+          <p>Send kids on adventures with their favorite characters in a space made just for them -- free with your membership</p>
+        </HomeCard>
         <EmailSignUpForm />
       </>
   )
