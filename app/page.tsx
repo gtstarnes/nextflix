@@ -1,4 +1,5 @@
 import EmailSignUpForm from './components/EmailSignUpForm'
+import Faqs from './components/FAQS/Faqs'
 import Hero from './components/Hero'
 import HomeCard from './components/HomeCard'
 import NavBar from './components/NavBar'
@@ -24,7 +25,7 @@ export default function Home() {
           <h1>Download your shows to watch offline</h1>
           <p>Watch on a plane, train, or submarine...</p>
         </HomeCard>
-        <EmailSignUpForm />
+        <Faqs />
       </>
   )
 }
