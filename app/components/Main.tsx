@@ -7,6 +7,7 @@ const Main = () => {
     const [movies, setMovies] = useState<Feature[]>([])
     const movie = movies[Math.floor(Math.random() * movies.length)]
     const releaseYear = movie?.release_date.slice(0,4)
+    const score = Math.floor(movie?.vote_average / 10 * 100)
 
     useEffect(() => {
         const getMovie = async () => {
@@ -23,20 +24,30 @@ const Main = () => {
         getMovie();
     }, [])
 
+    const shortenSummary = (summary: string, length: number = 150) => {
+        if (summary?.length > length) {
+            return summary.slice(0, length) + ' . . .'
+        }
+    }
+
   return (
-    <div className="relative">
-        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
-        <img src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
-        <div className="absolute w-full top-[20%] p-4 md:p-8">
-            <h1>{movie?.title}</h1>
+    <div className="relative w-full h-[550px] overflow-hidden">
+        <div className="absolute w-full h-[550px] bg-black opacity-50"></div>
+        <img src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title}
+            className="w-full h-full object-cover lg:object-center" />
+        <div className="absolute w-full top-[40%] p-4 md:p-8">
+            <h1 className="font-extrabold text-[2rem] lg:text-[3rem]">{movie?.title}</h1>
 
             <div className="flex gap-10">
+                <div className="">KINOMETER: {score}%</div>
                 <div>{releaseYear}</div>
-                <div>{movie?.vote_average / 10 * 100} %</div>
+                
             </div>
-            <p>{movie?.overview}</p>
-            <button>Watch</button>
-            <button>Add to Watchlist</button>
+            <p className="w-full md:max-w-[70%] lg:max-w-[50%]">{shortenSummary(movie?.overview) || 'No Summary Available'}</p>
+            <div className="flex gap-10 mt-4">
+                <button className="bg-red-500 p-4 w-[150px] rounded text-[1.2rem] hover:bg-red-700">Watch</button>
+                <button>Add to Watchlist</button>
+            </div>
         </div>
 
         
