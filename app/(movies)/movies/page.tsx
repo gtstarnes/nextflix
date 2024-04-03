@@ -1,8 +1,12 @@
+'use client'
+import Main from '@/app/components/Main'
 import React from 'react'
 
 const Landing = () => {
   return (
-    <div>Home - Where the movies are</div>
+    <div className="">
+      <Main  />
+    </div>
   )
 }
 
