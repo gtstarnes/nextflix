@@ -24,19 +24,22 @@ const Main = () => {
     }, [])
 
   return (
-    <div>
-        <div></div>
+    <div className="relative">
+        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
         <img src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
-        <div>
+        <div className="absolute w-full top-[20%] p-4 md:p-8">
             <h1>{movie?.title}</h1>
+
+            <div className="flex gap-10">
+                <div>{releaseYear}</div>
+                <div>{movie?.vote_average / 10 * 100} %</div>
+            </div>
+            <p>{movie?.overview}</p>
             <button>Watch</button>
             <button>Add to Watchlist</button>
         </div>
-        <div>
-            <div>{releaseYear}</div>
-            <div>{movie?.vote_average}%</div>
-        </div>
-        <p>{movie?.overview}</p>
+
+        
     </div>
   )
 }
