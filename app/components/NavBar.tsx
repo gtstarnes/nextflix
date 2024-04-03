@@ -4,8 +4,8 @@ import Link from 'next/link'
 const NavBar = () => {
     let isLoggedIn = false;
   return (
-    <div className="flex justify-between p-8 z-1000">
-        <h4 className="text-red-500 text-[1.8rem] font-bold">NEXTFLIX</h4>
+    <div className="flex justify-between p-8 z-50 bg-transparent absolute top-0 left-0 w-full">
+        <h4 className="text-red-500 text-[1.8rem] lg:text-[3rem] font-bold">NEXTFLIX</h4>
         <nav>
             <ul>
                 <li>
