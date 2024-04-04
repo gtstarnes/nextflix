@@ -1,17 +1,18 @@
 import {useEffect, useState} from 'react'
-import type { Feature, Row } from '../types/types'
+import type { FeatureType, RowType } from '../types/types'
+import Feature from './Feature'
 
 
 
-const Row = ({title, id, fetchURL}: Row) => {
-    const [movies, setMovies] = useState<Feature[]>([])
+const Row = ({title, id, fetchURL}: RowType) => {
+    const [shows, setShows] = useState<FeatureType[]>([])
 
     useEffect(() => {
         const requestMovies = async () => {
             try {
                 const response = await fetch(fetchURL)
                 const data = await response.json();
-                setMovies(data.results)
+                setShows(data.results)
             }
             catch (error) {
                 console.log('Error ', error)
@@ -21,6 +22,14 @@ const Row = ({title, id, fetchURL}: Row) => {
     }, [fetchURL])
   return (
     <div>
+        <h2>{title}</h2>
+        <div>
+            {shows.map(show => {
+                return (
+                    <Feature key={show.id} />
+                )
+            })}
+        </div>
         
     </div>
   )
