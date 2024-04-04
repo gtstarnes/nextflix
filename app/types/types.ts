@@ -7,3 +7,9 @@ export type Feature = {
     id: number
     vote_average: number
 }
+
+export type Row = {
+    title: string,
+    fetchURL: string,
+    id: number
+}
