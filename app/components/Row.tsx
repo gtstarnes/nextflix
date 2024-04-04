@@ -24,14 +24,16 @@ const Row = ({title, id, fetchURL}: RowType) => {
   return (
     <div>
         <h2 className="font-bold p-4">{title}</h2>
-        <div className="flex relative items-center">
-            <div className="w-full h-full overflow-x-scroll scroll-smooth">
+        <div className="flex relative items-center group">
+            <MdChevronLeft />
+            <div className="w-full h-full overflow-x-scroll scroll-smooth whitespace-nowrap">
                 {shows.map(show => {
                     return (
                         <Feature key={show.id} show={show} />
                     )
                 })}
             </div>
+            <MdChevronRight />
         </div>
         
     </div>
