@@ -23,7 +23,7 @@ const Row = ({title, id, fetchURL}: RowType) => {
   return (
     <div>
         <h2>{title}</h2>
-        <div>
+        <div className="flex overflow-x-auto">
             {shows.map(show => {
                 return (
                     <Feature key={show.id} />
