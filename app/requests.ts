@@ -5,4 +5,5 @@ export const requests = {
     requestPopularTV: `https://api.themoviedb.org/3/tv/popular?api_key=${api_key}`,
     requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${api_key}`,
     requestTopRatedTV: `https://api.themoviedb.org/3/tv/top_rated?api_key=${api_key}`,
+    requestUpcoming: `https://api.themoviedb.org/3/movie/upcoming?api_key=${api_key}`,
 }
