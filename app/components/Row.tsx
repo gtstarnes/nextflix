@@ -1,9 +1,14 @@
-import React from 'react'
-import type { Feature } from '../types/types' 
+import {useState} from 'react'
+import type { Feature, Row } from '../types/types'
 
-const Row = () => {
+
+
+const Row = ({title, id, fetchURL}: Row) => {
+    const [movies, setMovies] = useState<Feature[]>([])
   return (
-    <div>row</div>
+    <div>
+        
+    </div>
   )
 }
 
