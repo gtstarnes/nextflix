@@ -22,13 +22,15 @@ const Row = ({title, id, fetchURL}: RowType) => {
     }, [fetchURL])
   return (
     <div>
-        <h2>{title}</h2>
-        <div className="flex overflow-x-auto">
-            {shows.map(show => {
-                return (
-                    <Feature key={show.id} show={show} />
-                )
-            })}
+        <h2 className="font-bold p-4">{title}</h2>
+        <div className="flex relative items-center">
+            <div className="w-full h-full overflow-x-scroll scroll-smooth">
+                {shows.map(show => {
+                    return (
+                        <Feature key={show.id} show={show} />
+                    )
+                })}
+            </div>
         </div>
         
     </div>
