@@ -1,4 +1,4 @@
-export type Feature = {
+export type FeatureType = {
     title?: string,
     name?: string,
     release_date: string,
@@ -8,7 +8,7 @@ export type Feature = {
     vote_average: number
 }
 
-export type Row = {
+export type RowType = {
     title: string,
     fetchURL: string,
     id: number
