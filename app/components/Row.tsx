@@ -26,7 +26,7 @@ const Row = ({title, id, fetchURL}: RowType) => {
         <div className="flex overflow-x-auto">
             {shows.map(show => {
                 return (
-                    <Feature key={show.id} />
+                    <Feature key={show.id} show={show} />
                 )
             })}
         </div>
