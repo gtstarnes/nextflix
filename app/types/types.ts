@@ -11,5 +11,5 @@ export type FeatureType = {
 export type RowType = {
     title: string,
     fetchURL: string,
-    id: number
+    id: string
 }
