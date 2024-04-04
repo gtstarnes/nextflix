@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from "react"
 import { requests } from "../requests"
-import type {Feature} from "../types/types"
+import type {FeatureType} from "../types/types"
 
 const Main = () => {
-    const [movies, setMovies] = useState<Feature[]>([])
+    const [movies, setMovies] = useState<FeatureType[]>([])
     const movie = movies[Math.floor(Math.random() * movies.length)]
     const releaseYear = movie?.release_date.slice(0,4)
     const score = Math.floor(movie?.vote_average / 10 * 100)
