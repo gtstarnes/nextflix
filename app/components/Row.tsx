@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import type { FeatureType, RowType } from '../types/types'
 import Feature from './Feature'
+import {MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 
 
