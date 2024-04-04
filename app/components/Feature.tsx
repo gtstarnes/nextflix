@@ -1,8 +1,10 @@
-import React from 'react'
+import type { FeatureType } from "../types/types"
 
-const Feature = () => {
+const Feature = (feature: FeatureType) => {
   return (
-    <div>Feature</div>
+    <div>
+        
+    </div>
   )
 }
 
