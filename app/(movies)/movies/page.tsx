@@ -9,6 +9,9 @@ const Landing = () => {
     <div className="">
       <Main  />
       <Row id='1' title='Popular Movies on NextFlix' fetchURL={requests.requestPopular} />
+      <Row id='2' title='Popular Shows on NextFlix' fetchURL={requests.requestPopularTV} />
+      <Row id='3' title='Top Rated Movies on NextFlix' fetchURL={requests.requestTopRated} />
+      <Row id='4' title='Top Rated Shows on NextFlix' fetchURL={requests.requestTopRatedTV} />
     </div>
   )
 }
