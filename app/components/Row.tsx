@@ -25,7 +25,12 @@ const Row = ({title, id, fetchURL}: RowType) => {
     <div>
         <h2 className="font-bold p-4">{title}</h2>
         <div className="flex relative items-center group">
-            <MdChevronLeft />
+            <MdChevronLeft 
+                className="bg-white text-black rounded-full absolute 
+                    left-0 opacity-50 hover:opacity-100 cursor-pointer 
+                    z-10 hidden group-hover:flex shadow-md" 
+                size={40}
+            />
             <div className="w-full h-full overflow-x-scroll scroll-smooth whitespace-nowrap">
                 {shows.map(show => {
                     return (
@@ -33,7 +38,12 @@ const Row = ({title, id, fetchURL}: RowType) => {
                     )
                 })}
             </div>
-            <MdChevronRight />
+            <MdChevronRight 
+                className="bg-white text-black rounded-full absolute 
+                    right-0 opacity-50 hover:opacity-100 cursor-pointer 
+                    z-10 hidden group-hover:flex shadow-md" 
+                size={40} 
+            />
         </div>
         
     </div>
