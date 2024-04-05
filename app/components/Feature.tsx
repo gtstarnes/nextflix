@@ -9,7 +9,7 @@ const Feature = ({show}: {show: FeatureType}) => {
         </div>
         <img    
             src={`https://image.tmdb.org/t/p/original/${show.backdrop_path}`} alt={title}
-            className="w-full h-auto block"
+            className="w-full h-auto block rounded"
         />
     </div>
   )
