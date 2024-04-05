@@ -6,7 +6,7 @@ const Feature = ({show}: {show: FeatureType}) => {
   return (
     <div className="w-[280px] inline-block cursor-pointer relative mx-2">
         <div className="absolute flex items-center justify-center w-full h-full top-0 left-0 opacity-0 hover:opacity-100 hover:bg-black/60 break-all">
-            <h4 className="text-sm font-bold">{title}</h4>
+              <h4 className="text-sm font-bold max-w-[90%] overflow-clip">{title}</h4>
             <Heart />
         </div>
         <img    
