@@ -39,7 +39,7 @@ const Main = () => {
             <h1 className="font-extrabold text-[2rem] lg:text-[3rem]">{movie?.title}</h1>
 
             <div className="flex gap-10">
-                <div className="">KINOMETER: {score}%</div>
+                <div className="">TMDBscore: {score}%</div>
                 <div>{releaseYear}</div>
                 
             </div>
