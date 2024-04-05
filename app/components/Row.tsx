@@ -31,7 +31,7 @@ const Row = ({title, id, fetchURL}: RowType) => {
                     z-10 hidden group-hover:flex shadow-md" 
                 size={40}
             />
-            <div className="w-full h-full overflow-x-scroll scroll-smooth whitespace-nowrap">
+            <div className="w-full h-full overflow-x-scroll scroll-smooth no-scrollbar whitespace-nowrap">
                 {shows.map(show => {
                     return (
                         <Feature key={show.id} show={show} />
