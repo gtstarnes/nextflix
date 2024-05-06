@@ -3,16 +3,19 @@ import React, { useState } from 'react'
 import EmailSignUpForm from '../EmailSignUpForm'
 import { faqs } from './faqsInfo';
 
-type PanelType = Icon | null;
-type Icon = '+' | 'x';
+type PanelType = number | null;
+
 
 const Faqs = () => {
   const [activePanel, setActivePanel] = useState<PanelType>(null);
+  const togglePanel = (id: number) => {
+
+  }
   return (
     <div>
         {faqs.map(faq => {
           return (
-            <div key={faq.question} className="w-full">
+            <div key={faq.id} className="w-full">
               <button className="w-full h-10 bg-slate-500 rounded-sm mt-2">{faq.question}</button>
               <div>
                 <p className="w-full pl-2 mt-1 bg-slate-600">{faq.answer}</p>
