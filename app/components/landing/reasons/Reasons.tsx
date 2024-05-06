@@ -10,7 +10,7 @@ const Reasons = () => {
         {reasonsInfo.map(reason => {
           return (
             <div key={reason.id}>
-              <h2>{reason.reason}</h2>
+              <h2 className="font-bold text-xl">{reason.reason}</h2>
               <div>{reason.picture}</div>
             </div>
           )
