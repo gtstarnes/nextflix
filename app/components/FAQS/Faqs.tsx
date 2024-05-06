@@ -15,6 +15,14 @@ const Faqs = () => {
     }
     return icon
   }
+
+  const changeActivePanel = (id: number) => {
+    if (activePanel !== id) {
+      setActivePanel(id)
+    } else {
+      setActivePanel(null)
+    }
+  }
   return (
     <div>
         {faqs.map(faq => {
