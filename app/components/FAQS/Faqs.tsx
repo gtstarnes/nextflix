@@ -20,9 +20,9 @@ const Faqs = () => {
         {faqs.map(faq => {
           return (
             <div key={faq.id} className="w-full">
-              <button className="w-full h-10 bg-slate-500 rounded-sm mt-2">{faq.question} <span>{togglePanel(faq.id)}</span></button>
+              <button className="w-full h-10 bg-slate-500 rounded-sm mt-1 flex justify-between items-center p-2">{faq.question} <span>{togglePanel(faq.id)}</span></button>
               <div>
-                <p className="w-full pl-2 mt-1 bg-slate-600">{faq.answer}</p>
+                <p className="w-full pl-2 mt-1 bg-slate-600 rounded-sm">{faq.answer}</p>
               </div>
             </div>
           )
