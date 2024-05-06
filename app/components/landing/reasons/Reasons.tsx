@@ -5,7 +5,7 @@ import HomeCard from '../../HomeCard'
 const Reasons = () => {
   return (
     <HomeCard>
-      <h3>More Reasons to Join</h3>
+      <h3 className="font-bold">More Reasons to Join</h3>
       <div>
         {reasonsInfo.map(reason => {
           return (
