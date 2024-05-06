@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import EmailSignUpForm from '../EmailSignUpForm'
 import { faqs } from './faqsInfo';
+import HomeCard from '../HomeCard';
 
 type PanelType = number | null;
 
@@ -24,7 +25,9 @@ const Faqs = () => {
     }
   }
   return (
-    <div>
+    <HomeCard>
+      <h2>Frequently Asked Questions</h2>
+      <div>
         {faqs.map(faq => {
           return (
             <div key={faq.id} className="w-full">
@@ -44,8 +47,9 @@ const Faqs = () => {
             </div>
           )
         })}
+      </div>
         <EmailSignUpForm />
-    </div>
+    </HomeCard>
   )
 }
 
