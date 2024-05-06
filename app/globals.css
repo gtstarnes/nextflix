@@ -38,25 +38,31 @@ body {
 }
 }
 
+/* ACCORDION PANEL STYLES*/
 .panel-closed {
-  height: 0px;
+  max-height: 0px;
   overflow: hidden;
   visibility: hidden;
-  
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
 .panel-opened {
-  height: auto;
+  max-height: 300px;
   overflow:auto;
   visibility: visible;  
   margin-bottom: 0.25rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 .answer {
   width: 100%;
   background-color: rgb(71 85 105);
   border-radius: 0.125rem;
-  padding-left: 0.5rem;
   margin-top: 0.25rem;
-  transition: all 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
+  transition: visibility 0.2 ease-in-out;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
