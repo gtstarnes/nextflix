@@ -9,7 +9,11 @@ type PanelType = number | null;
 const Faqs = () => {
   const [activePanel, setActivePanel] = useState<PanelType>(null);
   const togglePanel = (id: number) => {
-
+    let icon:string = "+";
+    if (activePanel === id) {
+      icon = "x"
+    }
+    return icon
   }
   return (
     <div>
