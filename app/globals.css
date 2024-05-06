@@ -44,3 +44,9 @@ body {
   visibility: hidden;
   transition: all 0.2s ease-in-out;
 }
+
+.panel-opened {
+  height: auto;
+  overflow:auto;
+  visibility: visible;
+}
