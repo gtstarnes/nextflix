@@ -9,9 +9,9 @@ const Reasons = () => {
       <div>
         {reasonsInfo.map(reason => {
           return (
-            <div key={reason.id}>
+            <div key={reason.id} className="flex flex-col">
               <h2 className="font-bold text-xl">{reason.reason}</h2>
-              <div>{reason.picture}</div>
+              <div className="text-red-500">{reason.picture}</div>
             </div>
           )
         })}
