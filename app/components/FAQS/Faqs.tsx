@@ -26,8 +26,8 @@ const Faqs = () => {
   }
   return (
     <HomeCard>
-      <h2>Frequently Asked Questions</h2>
-      <div>
+      <h2 className="font-bold text-lg flex justify-center">Frequently Asked Questions</h2>
+      <div className="mb-8">
         {faqs.map(faq => {
           return (
             <div key={faq.id} className="w-full">
@@ -35,7 +35,7 @@ const Faqs = () => {
                 className="w-full h-16 bg-slate-600 hover:bg-slate-500 rounded-sm flex justify-between items-center p-4 text-lg" 
                 onClick={() => changeActivePanel(faq.id)}>
                   {faq.question} 
-                  <span className="text-xl">{togglePanel(faq.id)}</span>
+                  <span className="text-[1.5rem] font-semibold">{togglePanel(faq.id)}</span>
               </button>
               <div>
                 <p className={activePanel === faq.id ? 
