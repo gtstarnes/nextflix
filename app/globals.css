@@ -42,13 +42,14 @@ body {
   height: 0px;
   overflow: hidden;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  
 }
 
 .panel-opened {
   height: auto;
   overflow:auto;
-  visibility: visible;
+  visibility: visible;  
+  margin-bottom: 0.25rem;
 }
 
 .answer {
@@ -57,4 +58,5 @@ body {
   border-radius: 0.125rem;
   padding-left: 0.5rem;
   margin-top: 0.25rem;
+  transition: all 0.2s ease-in-out;
 }
