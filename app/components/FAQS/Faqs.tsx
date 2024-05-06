@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import EmailSignUpForm from '../EmailSignUpForm'
 import { faqs } from './faqsInfo';
 
 const Faqs = () => {
+  const [activePanel, setActivePanel] = useState<PanelType>(null);
   return (
     <div>
         {faqs.map(faq => {
