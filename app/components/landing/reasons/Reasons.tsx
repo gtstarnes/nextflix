@@ -11,7 +11,7 @@ const Reasons = () => {
           return (
             <div key={reason.id} className="flex flex-col justify-between h-[8rem] mb-2 rounded-md bg-slate-700 p-4">
               <h2 className="font-bold text-xl">{reason.reason}</h2>
-              <div className="text-red-500 font-extrabold self-end text-lg">{reason.picture}</div>
+              <div className="font-extrabold self-end text-5xl text-red-600">{reason.picture}</div>
             </div>
           )
         })}
