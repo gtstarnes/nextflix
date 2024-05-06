@@ -30,7 +30,7 @@ const Faqs = () => {
             <div key={faq.id} className="w-full">
               <button className="w-full h-10 bg-slate-500 rounded-sm mt-1 flex justify-between items-center p-2" onClick={() => changeActivePanel(faq.id)}>{faq.question} <span>{togglePanel(faq.id)}</span></button>
               <div>
-                <p className="w-full pl-2 mt-1 bg-slate-600 rounded-sm">{faq.answer}</p>
+                <p className={activePanel === faq.id ? "answer panel-opened" : "answer panel-closed"}>{faq.answer}</p>
               </div>
             </div>
           )
