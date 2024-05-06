@@ -1,6 +1,10 @@
+
 import React, { useState } from 'react'
 import EmailSignUpForm from '../EmailSignUpForm'
 import { faqs } from './faqsInfo';
+
+type PanelType = Icon | null;
+type Icon = '+' | 'x';
 
 const Faqs = () => {
   const [activePanel, setActivePanel] = useState<PanelType>(null);
