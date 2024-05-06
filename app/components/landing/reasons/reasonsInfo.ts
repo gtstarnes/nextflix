@@ -1,4 +1,4 @@
-const reasonsInfo = [
+export const reasonsInfo = [
     {
         id: 1,
         reason: "Stories tailored to your taste",
