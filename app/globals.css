@@ -37,3 +37,10 @@ body {
       scrollbar-width: none; 
 }
 }
+
+.panel-closed {
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
