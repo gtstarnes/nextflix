@@ -12,10 +12,7 @@ export default function Home() {
       <>
         <Hero />
         <Reasons />
-        <HomeCard>
-          <Faqs />
-        </HomeCard>
-        
+        <Faqs />
       </>
   )
 }
